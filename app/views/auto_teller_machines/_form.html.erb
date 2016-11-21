@@ -1,0 +1,17 @@
+<%= form_for(auto_teller_machine) do |f| %>
+  <% if auto_teller_machine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(auto_teller_machine.errors.count, "error") %> prohibited this auto_teller_machine from being saved:</h2>
+
+      <ul>
+      <% auto_teller_machine.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

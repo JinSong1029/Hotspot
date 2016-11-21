@@ -1,0 +1,1 @@
+json.partial! "auto_teller_machines/auto_teller_machine", auto_teller_machine: @auto_teller_machine

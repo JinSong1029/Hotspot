@@ -1,0 +1,2 @@
+module AutoTellerMachinesHelper
+end

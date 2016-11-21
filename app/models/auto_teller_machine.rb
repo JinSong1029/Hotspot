@@ -1,0 +1,2 @@
+class AutoTellerMachine < ApplicationRecord
+end

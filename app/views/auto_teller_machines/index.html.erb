@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Auto Teller Machines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @auto_teller_machines.each do |auto_teller_machine| %>
+      <tr>
+        <td><%= link_to 'Show', auto_teller_machine %></td>
+        <td><%= link_to 'Edit', edit_auto_teller_machine_path(auto_teller_machine) %></td>
+        <td><%= link_to 'Destroy', auto_teller_machine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Auto Teller Machine', new_auto_teller_machine_path %>
