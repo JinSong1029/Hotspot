@@ -1,54 +1,74 @@
 <div id="wrapper">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div style="width:100vw; height:100vh;">
-                          <div id="map" style='width: 100vw; height: 100vh;'></div>
-                        </div>
-                    </div>
+      <div class="sidebar-header">
+        <p class="sidebar-header-logo">
+          Welcome Admin
+        </p>
+        <%= image_tag("home.png", class:"sidebar-header-home", width:"40", height:"40") %>
+      </div>
+
+      <div class="sidebar-form">
+        <form class="form-inline">
+          <select class="form-control input-sm input-hero input-region">
+            <option>1</option>
+          </select>
+          <select class="form-control input-sm input-hero input-city">
+            <option>1</option>
+          </select>
+          <button type="submit" class="btn btn-sm btn-go">GO</button>
+          <button type="submit" class="btn btn-sm btn-reset">RESET</button>
+        </form>
+      </div>
+
+      <div class="sidebar-refer-panel">
+        <%= image_tag("street.JPG", class: "sidebar-refer-image") %>
+      </div>
+
+      <div class="sidebar-info-panel">
+        <p>Terminal ID:</p>
+        <h4>RAJHIDOWMDLAM502864HB</h4>
+        <p>Brand: <span>Diebold</span></p>
+        <p>Address: <span>Balladial Ruwaida</span></p>
+        <p>City: <span>Al-reweeda</span></p>
+
+        <div class="sidebar-info-direction">
+          <div class="sidebar-info-direction-btn">
+
+          </div>
+          <p>
+            Directions
+          </p>
+        </div>
+
+        <div class="sidebar-action-panel">
+          <%= image_tag("plus.png", class: "sidebar-action-icon", width: "40", height: "40") %>
+          <%= image_tag("share.png", class: "sidebar-action-icon", width: "40", height: "40") %>
+        </div>
+
+    </div>
+
+
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" style="padding:0px;">
+        <div class="container-fluid" style="padding:0px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--<div style="width:100vw; height:100vh;">
+                      <div id="map" style='width: 100vw; height: 100vh;'></div>
+                    </div>-->
                 </div>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
-
     </div>
-    <!-- /#wrapper -->
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
 
 
 <% content_for :js do %>
@@ -61,7 +81,7 @@
     provider: {
       //maxZoom: 15,
       //minZoom: 10
-      Zoom: 2
+      Zoom: 3
     },
     internal: {
       id: "map"
