@@ -101,7 +101,13 @@
 }
 
 /************************************
+
+        Author : SIMBA
+        DATE: 2016.11.22
+        CONTENT: Custom CSS
+
 ************************************/
+
 .sidebar-header{
   position: relative;
   height: 40px;
@@ -109,7 +115,6 @@
 }
 
 .sidebar-header-logo{
-
   position: absolute;
   margin: 0;
   top: 50%;
@@ -151,9 +156,9 @@
   -webkit-transition: border .25s ease, width .125s ease .125s;
   transition: border .25s ease, width .125s ease .125s;
 }
+
 .input-region{
   width: 30%;
-  margin-left: 5%;
 }
 
 .input-city{
@@ -161,7 +166,7 @@
 }
 
 .btn-go{
-    margin-left: 5%;
+    margin-left: 3%;
     background: transparent;
     text-decoration: none;
     color: #ffffff;
@@ -195,6 +200,7 @@
 
 .btn-reset:hover{
   border: 2px solid rgba(245, 245, 241, 1);
+  color: blue;
 }
 
 .sidebar-refer-panel{
@@ -224,15 +230,32 @@ p{
 .sidebar-info-direction{
   position: absolute;
   width: 40px;
-  right: 0px;
-  top: 0px;
+  right: 50px;
+  top: -20px;
+  text-align: center;
 }
 
 .sidebar-info-direction-btn{
     width: 40px;
     height: 40px;
-    background :white;
+    background : #5F84CE;
     border-radius: 50px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.sidebar-info-direction-btn:hover{
+  background: #c7417f;
+}
+
+.sidebar-info-direction-btn > span{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .sidebar-action-panel{
@@ -268,6 +291,7 @@ p{
 .sidebar-comment{
   padding: 15px;
 }
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 500px;
@@ -279,6 +303,7 @@ p{
 
     #sidebar-wrapper {
         width: 500px;
+        box-shadow: 4px 0px 28px #131111;
     }
 
     #wrapper.toggled #sidebar-wrapper {
