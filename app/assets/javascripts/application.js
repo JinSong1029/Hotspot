@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= bootstrap-sprockets
 //= require markerclusterer
 //= require underscore
