@@ -38,8 +38,12 @@ gem 'autoprefixer-rails'
 gem 'gmaps4rails'
 gem 'underscore-rails'
 
+# geocoder gem
 gem 'geocoder'
 gem 'markerclustererplus-rails'
+
+# font-awesome
+gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

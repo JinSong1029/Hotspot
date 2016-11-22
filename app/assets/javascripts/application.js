@@ -17,4 +17,8 @@
 //= require markerclusterer
 //= require underscore
 //= require gmaps/google
+//= require carousel
+//= require globalview
+//= require jquery.relection
+//= require social
 //= require_tree.
