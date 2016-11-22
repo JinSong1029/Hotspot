@@ -43,13 +43,42 @@
           </p>
         </div>
 
-        <div class="sidebar-action-panel">
-          <%= image_tag("plus.png", class: "sidebar-action-icon", width: "40", height: "40") %>
-          <%= image_tag("share.png", class: "sidebar-action-icon", width: "40", height: "40") %>
+        <div class="sidebar-action-icon">
+          <i class="fa fa-plus fa-1x"></i>
+        </div>
+        <div class="sidebar-action-icon">
+          <i class="fa fa-share-alt fa-1x"></i>
         </div>
 
+        <div class="sidebar-action-panel">
+
+        </div>
     </div>
 
+    <div class="sidebar-carousel">
+        <div id="showcase" class="noselect">
+          <%= image_tag("1.jpg", class: "cloud9-item", alt: "Item #1") %>
+          <%= image_tag("1.jpg", class: "cloud9-item", alt: "Item #2") %>
+          <%= image_tag("1.jpg", class: "cloud9-item", alt: "Item #3") %>
+          <%= image_tag("1.jpg", class: "cloud9-item", alt: "Item #3") %>
+        </div>
+        <footer>
+          <div id="nav" class="noselect">
+            <button class="left">
+              ←
+            </button>
+            <button class="right">
+              →
+            </button>
+          </div>
+        </footer>
+    </div>
+
+    <div class="sidebar-comment">
+      <p>This ATM is located in the xxx region, in the city of xxx. It is a xxxx type and it xxxKm away from you. There are xx ATMs in a 100m radius. In the city selected, there are a total of xxx ATMs and a ratio of xxx ATMs per capita. The ATM has xxx in-cidents and was last visited on xxxx.</p>
+    </div>
+
+  </div>
 
     <!-- /#sidebar-wrapper -->
 
