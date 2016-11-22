@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= bootstrap-sprockets
-//= require_tree .
+//= require markerclusterer
+//= require underscore
+//= require gmaps/google
+//= require_tree.

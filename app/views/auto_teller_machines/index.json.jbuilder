@@ -1,0 +1,1 @@
+json.array! @auto_teller_machines, partial: 'auto_teller_machines/auto_teller_machine', as: :auto_teller_machine

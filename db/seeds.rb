@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+AutoTellerMachine.create(code:"10299", u_id:"RAJHIA1L018001HD", brand:"Diebold", address:"SINAYAH AL ASEMAH", city:"Riyadh")
