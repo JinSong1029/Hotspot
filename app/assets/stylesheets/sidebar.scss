@@ -30,7 +30,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #545bbd;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -242,10 +242,12 @@ p{
     border-radius: 50px;
     position: relative;
     transition: 0.3s;
+    box-shadow: 4px 0px 28px #283488;
 }
 
 .sidebar-info-direction-btn:hover{
   background: #c7417f;
+  box-shadow: 4px 0px 28px #ffffff;
 }
 
 .sidebar-info-direction-btn > span{
@@ -271,6 +273,7 @@ p{
   position: relative;
   background: #5F84CE;
   border-radius: 55px;
+  box-shadow: 4px 0px 28px #283488;
   transition: 0.5s;
 }
 
@@ -286,6 +289,7 @@ p{
 
 .sidebar-action-icon:hover{
   background: #d21776;
+  box-shadow: 4px 0px 28px #ff3699;
 }
 
 .sidebar-comment{
@@ -303,7 +307,7 @@ p{
 
     #sidebar-wrapper {
         width: 500px;
-        box-shadow: 4px 0px 28px #131111;
+        box-shadow: 4px 0px 28px #283488;
     }
 
     #wrapper.toggled #sidebar-wrapper {
